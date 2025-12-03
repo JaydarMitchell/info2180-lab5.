@@ -6,7 +6,7 @@ $dbname = 'world';
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
 
-// fallback for older PHP versions
+
 $country = isset($_GET['country']) ? $_GET['country'] : '';
 $lookup = isset($_GET['lookup']) ? $_GET['lookup'] : '';
 
@@ -65,3 +65,6 @@ if ($lookup == 'cities') {
     </table>
     <?php
 }
+
+
+
